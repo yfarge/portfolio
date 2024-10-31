@@ -6,9 +6,9 @@ export interface TimelineItem {
   href: string;
   name: string;
   title: string;
-  description: string[];
+  description?: string[];
   start: string;
-  end: string;
+  end?: string;
 }
 
 export const TimelineItem = ({

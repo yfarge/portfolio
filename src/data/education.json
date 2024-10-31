@@ -1,0 +1,12 @@
+{
+  "education": [
+    {
+      "name": "Northwestern University",
+      "href": "https://www.northwestern.edu/",
+      "title": "Bachelor of Arts in Computer Science",
+      "logo": "/northwestern.svg",
+      "start": "September 2019",
+      "end": "June 2023"
+    }
+  ]
+}

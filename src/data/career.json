@@ -1,0 +1,32 @@
+{
+  "career": [
+    {
+      "name": "Flare Financial Systems",
+      "href": "https://www.flarefs.com/",
+      "title": "Founding Software Engineer",
+      "logo": "/flare.svg",
+      "description": [
+        "Developed a RESTful API for managing dynamic payment approval requests using Stripe APIs and Webhooks, leveraging Node.js and PostgreSQL to enable users to submit payment requests seamlessly to their stakeholder",
+        "Led the development of a payment link creation feature leveraging Stripe APIs and Next.js, resulting in over $25000 dollars of funds raised by users",
+        "Designed and implemented a RESTful API to enable receipt attachments and custom metadata mappings for financial transactions, allowing users to sync their in application transactions with their accounting systems, reducing manual entry time and ensuring consistency between systems",
+        "Implemented application-level caching with Tanstack Query, reducing server load and improving perceived user response time for a smoother user experience",
+        "Implemented a payments view with advanced filtering, sorting, and pagination features using Next.js, Node.js, and PostgreSQL, enabling users to efficiently reconcile money movement and manage transactions"
+      ],
+      "start": "July 2023",
+      "end": "July 2024"
+    },
+    {
+      "name": "Flare Financial Systems",
+      "href": "https://www.flarefs.com/",
+      "title": "Software Engineer Intern",
+      "logo": "/flare.svg",
+      "description": [
+        "Developed a back-end web service with Node.js and AWS Cognito to manage user authentication resulting in secure identity management and access control",
+        "Led user testing for the financial dashboard feature, gathering feedback from active users to inform iterative improvements on feature design and implementation",
+        "Implemented Figma designs for a financial reporting dashboard in ReactJS, ingesting data pulled from QuickBooks and visualizing it with dynamic charts and tables using ChartJS for enhanced user insights"
+      ],
+      "start": "July 2023",
+      "end": "July 2024"
+    }
+  ]
+}
