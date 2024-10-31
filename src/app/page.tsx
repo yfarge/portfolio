@@ -1,4 +1,5 @@
 import Experience from "@/components/Experience";
+import { Footer } from "@/components/Footer";
 import { Socials } from "@/components/Socials";
 import { Button } from "@/components/ui/Button";
 import { FileDown } from "lucide-react";
@@ -40,6 +41,7 @@ export default function Home() {
         </section>
       </section>
       <Experience />
+      <Footer />
     </article>
   );
 }
