@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { Inter, Calistoga } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 export const metadata: Metadata = {
   title: "Yousef Farge",
@@ -31,9 +32,11 @@ export default function RootLayout({
           calistoga.variable,
         )}
       >
-        <Header />
-        <main className="grow">{children}</main>
-        <Footer />
+        <ThemeProvider>
+          <Header />
+          <main className="grow">{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
