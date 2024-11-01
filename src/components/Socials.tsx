@@ -1,4 +1,7 @@
-import { Linkedin, Github } from "lucide-react";
+import {
+  SiLinkedin as Linkedin,
+  SiGithub as Github,
+} from "@icons-pack/react-simple-icons";
 
 export const Socials = () => {
   const items = [
@@ -16,7 +19,7 @@ export const Socials = () => {
         return (
           <li key={title}>
             <a href={href} target="_blank">
-              <Icon />
+              <Icon className="text-muted-foreground size-5" />
             </a>
           </li>
         );
