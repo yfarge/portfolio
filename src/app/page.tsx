@@ -1,22 +1,18 @@
 import Experience from "@/components/Experience";
-import { Footer } from "@/components/Footer";
 import { Socials } from "@/components/Socials";
 import { Button } from "@/components/ui/Button";
+import { summarySchema } from "@/lib/schemas";
+import summaryData from "@/data/summary.json";
 import { FileDown } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  const content = {
-    title: "Yousef Farge",
-    subtitle: "Software Engineer",
-    description: "Description",
-  };
-
+  const summary = summarySchema.parse(summaryData);
   return (
     <article className="flex flex-col gap-16">
       <section>
-        <div className="mt-8 flex flex-col items-start gap-8 md:flex-row-reverse md:items-center md:justify-between">
+        <div className="mt-8 flex flex-col items-start gap-8 md:flex-row-reverse md:items-start md:justify-between">
           <Image
             src="/pfp.jpg"
             alt="Yousef's profile picture"
@@ -25,9 +21,11 @@ export default function Home() {
             className="rounded-xl"
           />
           <div>
-            <h1 className="text-5xl font-bold">{content.title}</h1>
-            <h2 className="text-2xl">{content.subtitle}</h2>
-            <p>{content.description}</p>
+            <h1 className="font-serif text-5xl tracking-wide decoration-border/75 decoration-2">
+              {summary.title}
+            </h1>
+            <h2 className="text-2xl">{summary.subtitle}</h2>
+            <p>{summary.description}</p>
           </div>
         </div>
         <section className="mt-8 flex items-center gap-8">
@@ -41,7 +39,6 @@ export default function Home() {
         </section>
       </section>
       <Experience />
-      <Footer />
     </article>
   );
 }

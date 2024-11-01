@@ -3,6 +3,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Inter, Calistoga } from "next/font/google";
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Yousef Farge",
@@ -32,6 +33,7 @@ export default function RootLayout({
       >
         <Header />
         <main className="grow">{children}</main>
+        <Footer />
       </body>
     </html>
   );
