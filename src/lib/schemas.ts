@@ -13,9 +13,11 @@ const experience = z.object({
 export const summarySchema = z.object({
   title: z.string(),
   subtitle: z.string(),
+  dob: z.string(),
+  location: z.string(),
+  role: z.string(),
   description: z.string(),
 });
-
 
 export const careerSchema = z.object({ career: z.array(experience) });
 export const educationSchema = z.object({ education: z.array(experience) });

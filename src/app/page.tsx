@@ -9,6 +9,7 @@ import Link from "next/link";
 
 export default function Home() {
   const summary = summarySchema.parse(summaryData);
+  const age = new Date().getFullYear() - new Date(summary.dob).getFullYear();
   return (
     <article className="flex flex-col gap-16">
       <section>
@@ -20,19 +21,22 @@ export default function Home() {
             height={175}
             className="rounded-xl"
           />
-          <div>
+          <div className="flex flex-col gap-2">
             <h1 className="font-serif text-5xl tracking-wide decoration-border/75 decoration-2">
               {summary.title}
             </h1>
             <h2 className="text-2xl">{summary.subtitle}</h2>
-            <p>{summary.description}</p>
+            <p className="prose dark:prose-invert">
+              {age}-year-old software engineer based in Chicago, IL
+            </p>
+            <p className="prose dark:prose-invert">{summary.description}</p>
           </div>
         </div>
         <section className="mt-8 flex items-center gap-8">
           <Link href="/resume.pdf" target="_blank">
             <Button variant="outline">
               <span className="font-semibold">Resume</span>
-              <FileDown className="ml-2 size-5" />
+              <FileDown className="ml-2" />
             </Button>
           </Link>
           <Socials />

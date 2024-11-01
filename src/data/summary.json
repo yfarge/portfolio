@@ -1,5 +1,8 @@
 {
   "title": "Yousef Farge",
   "subtitle": "Software Engineer",
-  "description": "Description"
+  "dob": "2001-03-20",
+  "location": "Chicago, IL",
+  "role": "Software Engineer",
+  "description": "I love developing full-stack applications, building reliable backends with Node.js and PostgreSQL, and crafting smooth, responsive interfaces with Next.js and React."
 }
