@@ -1,10 +1,10 @@
-import Link from "next/link";
-import ThemeToggle from "./ThemeToggle";
+import Link from 'next/link';
+import ThemeToggle from './ThemeToggle';
 
 const links = [
-  { title: "home", href: "/" },
-  { title: "projects", href: "/projects" },
-  { title: "blog", href: "/blog" },
+  { title: 'home', href: '/' },
+  { title: 'projects', href: '/projects' },
+  { title: 'blog', href: '/blog' },
 ];
 
 export const Header = () => {

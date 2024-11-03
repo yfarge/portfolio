@@ -1,8 +1,8 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/Tabs";
-import { Timeline } from "./ui/Timeline";
-import { careerSchema, educationSchema } from "@/lib/schemas";
-import careerData from "@/data/career.json";
-import educationData from "@/data/education.json";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/Tabs';
+import { Timeline } from './ui/Timeline';
+import { careerSchema, educationSchema } from '@/lib/schemas';
+import careerData from '@/data/career.json';
+import educationData from '@/data/education.json';
 
 export default function Experience() {
   const career = careerSchema.parse(careerData).career;

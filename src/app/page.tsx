@@ -1,11 +1,11 @@
-import Experience from "@/components/Experience";
-import { Socials } from "@/components/Socials";
-import { Button } from "@/components/ui/Button";
-import { summarySchema } from "@/lib/schemas";
-import summaryData from "@/data/summary.json";
-import { FileDown } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
+import Experience from '@/components/Experience';
+import { Socials } from '@/components/Socials';
+import { Button } from '@/components/ui/Button';
+import { summarySchema } from '@/lib/schemas';
+import summaryData from '@/data/summary.json';
+import { FileDown } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   const summary = summarySchema.parse(summaryData);

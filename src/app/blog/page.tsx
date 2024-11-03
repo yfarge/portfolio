@@ -1,8 +1,8 @@
-import PostsWithSearch from "@/components/PostsWithSearch";
-import { getPosts } from "@/lib/posts";
-import path from "path";
+import PostsWithSearch from '@/components/PostsWithSearch';
+import { getPosts } from '@/lib/posts';
+import path from 'path';
 
-const blogDirectory = path.join(process.cwd(), "content");
+const blogDirectory = path.join(process.cwd(), 'content');
 
 export default async function BlogsPage() {
   const posts = await getPosts(blogDirectory);

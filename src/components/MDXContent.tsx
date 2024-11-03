@@ -1,4 +1,4 @@
-import { MDXRemote, MDXRemoteProps } from "next-mdx-remote/rsc";
+import { MDXRemote, MDXRemoteProps } from 'next-mdx-remote/rsc';
 
 export default function MDXContent(
   props: JSX.IntrinsicAttributes & MDXRemoteProps,

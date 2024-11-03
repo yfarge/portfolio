@@ -1,6 +1,6 @@
-import Link from "next/link";
-import { Card } from "./ui/Card";
-import { PostMetadata } from "@/lib/posts";
+import Link from 'next/link';
+import { Card } from './ui/Card';
+import { PostMetadata } from '@/lib/posts';
 
 interface PostsProps {
   posts: PostMetadata[];

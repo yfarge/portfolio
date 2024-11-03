@@ -1,16 +1,16 @@
 import {
   SiLinkedin as Linkedin,
   SiGithub as Github,
-} from "@icons-pack/react-simple-icons";
+} from '@icons-pack/react-simple-icons';
 
 export const Socials = () => {
   const items = [
     {
-      title: "linkedin",
+      title: 'linkedin',
       Icon: Linkedin,
-      href: "https://www.linkedin.com/in/yfarge/",
+      href: 'https://www.linkedin.com/in/yfarge/',
     },
-    { title: "github", Icon: Github, href: "https://github.com/yfarge" },
+    { title: 'github', Icon: Github, href: 'https://github.com/yfarge' },
   ];
 
   return (

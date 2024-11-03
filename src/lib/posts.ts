@@ -1,6 +1,6 @@
-import fs from "fs";
-import matter from "gray-matter";
-import path from "path";
+import fs from 'fs';
+import matter from 'gray-matter';
+import path from 'path';
 
 export type Post = {
   metadata: PostMetadata;
@@ -21,7 +21,7 @@ export async function getPostBySlug(
 ): Promise<Post | null> {
   try {
     const filePath = path.join(rootDirectory, `${slug}.mdx`);
-    const fileContents = fs.readFileSync(filePath, { encoding: "utf-8" });
+    const fileContents = fs.readFileSync(filePath, { encoding: 'utf-8' });
     const { data, content } = matter(fileContents);
 
     return { metadata: { ...data, slug }, content };
@@ -38,12 +38,12 @@ export async function getPosts(
   const files = fs.readdirSync(rootDirectory);
 
   const posts = files
-    .filter((file) => file.endsWith(".mdx")) // might have .DS_Store?
+    .filter((file) => file.endsWith('.mdx')) // might have .DS_Store?
     .map((file) => getPostMetaData(rootDirectory, file))
     .sort(
       (a, b) =>
-        (new Date(b.publishedAt ?? "").getTime() || 0) -
-        (new Date(a.publishedAt ?? "").getTime() || 0),
+        (new Date(b.publishedAt ?? '').getTime() || 0) -
+        (new Date(a.publishedAt ?? '').getTime() || 0),
     );
 
   if (limit) {
@@ -57,9 +57,9 @@ export function getPostMetaData(
   rootDirectory: string,
   filePath: string,
 ): PostMetadata {
-  const slug = filePath.replace(/\.mdx$/, "");
+  const slug = filePath.replace(/\.mdx$/, '');
   const fullFilePath = path.join(rootDirectory, filePath);
-  const fileContent = fs.readFileSync(fullFilePath, { encoding: "utf8" });
+  const fileContent = fs.readFileSync(fullFilePath, { encoding: 'utf8' });
   const { data } = matter(fileContent);
 
   return { ...data, slug };

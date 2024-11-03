@@ -1,10 +1,10 @@
-import MDXContent from "@/components/MDXContent";
-import { getPostBySlug, getPosts } from "@/lib/posts";
-import Image from "next/image";
-import { notFound } from "next/navigation";
-import path from "path";
+import MDXContent from '@/components/MDXContent';
+import { getPostBySlug, getPosts } from '@/lib/posts';
+import Image from 'next/image';
+import { notFound } from 'next/navigation';
+import path from 'path';
 
-const blogDirectory = path.join(process.cwd(), "content");
+const blogDirectory = path.join(process.cwd(), 'content');
 
 export async function generateStaticParams() {
   const posts = await getPosts(blogDirectory);
@@ -32,7 +32,7 @@ export default async function Post({
     <article className="mt-8 flex flex-col gap-8 pb-16">
       {image && (
         <div className="relative mb-6 h-96 w-full overflow-hidden rounded-lg">
-          <Image src={image} alt={title || ""} className="object-cover" fill />
+          <Image src={image} alt={title || ''} className="object-cover" fill />
         </div>
       )}
 
@@ -41,7 +41,7 @@ export default async function Post({
           {title}
         </h1>
         <p className="mt-2 text-xs text-muted-foreground">
-          {publishedAt ?? ""}
+          {publishedAt ?? ''}
         </p>
       </header>
 
