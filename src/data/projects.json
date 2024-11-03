@@ -1,0 +1,29 @@
+{
+  "project": [
+    {
+      "title": "Promise Implementation",
+      "description": "An implementation of the JavaScript Promise API that closely mimics native promise behavior",
+      "tags": ["JavaScript", "Asynchronous", "Promise"],
+      "links": [
+        {
+          "title": "Source",
+          "icon": "github",
+          "href": "https://github.com/yfarge/simple-promise"
+        }
+      ]
+    },
+
+    {
+      "title": "Finite State Machine Implementation",
+      "description": "An Implementation of a Finite State Machine (FSM) in TypeScript",
+      "tags": ["TypeScript", "State Machine"],
+      "links": [
+        {
+          "title": "Source",
+          "icon": "github",
+          "href": "https://github.com/yfarge/simple-state-machine"
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { Avatar, AvatarFallback, AvatarImage } from "./Avatar";
+import Link from 'next/link';
+import { Avatar, AvatarFallback, AvatarImage } from './Avatar';
 
 export interface TimelineItem {
   logo: string;
@@ -40,8 +40,8 @@ export const TimelineItem = ({
         {start && (
           <time className="text-xs text-muted-foreground">
             <span>{start}</span>
-            <span>{" - "}</span>
-            <span>{end ? end : "Present"}</span>
+            <span>{' - '}</span>
+            <span>{end ? end : 'Present'}</span>
           </time>
         )}
         <h2 className="font-semibold leading-none">{name}</h2>
