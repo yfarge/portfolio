@@ -55,7 +55,7 @@ export const ProjectCard = ({
             {links.map(({ icon, title, href }) => {
               const Icon = icons[icon];
               return (
-                <Link href={href} target="_blank">
+                <Link key={href} href={href} target="_blank">
                   <Badge
                     key={title}
                     variant="default"

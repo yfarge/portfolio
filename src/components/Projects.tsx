@@ -7,7 +7,7 @@ export const Projects = () => {
   return (
     <section className="grid grid-cols-2 gap-4">
       {projects.map((project) => (
-        <ProjectCard {...project} />
+        <ProjectCard key={project.title} {...project} />
       ))}
     </section>
   );

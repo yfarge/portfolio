@@ -10,7 +10,7 @@ export default function ThemeToggle() {
   const { setTheme, resolvedTheme } = useTheme();
   const toggle = useCallback(
     () => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark'),
-    [resolvedTheme],
+    [resolvedTheme, setTheme],
   );
 
   const mounted = useMounted();
