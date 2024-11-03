@@ -5,7 +5,7 @@ import { ProjectCard } from '@/components/ProjectCard';
 export const Projects = () => {
   const projects = projectSchema.parse(projectData).project;
   return (
-    <section className="grid grid-cols-2 gap-4">
+    <section className="grid grid-cols-1 sm:grid-cols-2 gap-4">
       {projects.map((project) => (
         <ProjectCard key={project.title} {...project} />
       ))}
