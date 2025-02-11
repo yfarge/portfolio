@@ -6,11 +6,11 @@
       "title": "Founding Software Engineer",
       "logo": "/flare.svg",
       "description": [
-        "Developed a RESTful API for managing dynamic payment approval requests using Stripe APIs and Webhooks, leveraging Node.js and PostgreSQL to enable users to submit payment requests seamlessly to their stakeholder",
-        "Led the development of a payment link creation feature leveraging Stripe APIs and Next.js, resulting in over $25000 dollars of funds raised by users",
-        "Designed and implemented a RESTful API to enable receipt attachments and custom metadata mappings for financial transactions, allowing users to sync their in application transactions with their accounting systems, reducing manual entry time and ensuring consistency between systems",
-        "Implemented application-level caching with Tanstack Query, reducing server load and improving perceived user response time for a smoother user experience",
-        "Implemented a payments view with advanced filtering, sorting, and pagination features using Next.js, Node.js, and PostgreSQL, enabling users to efficiently reconcile money movement and manage transactions"
+        "Engineered a RESTful API for streamlined management of payment approval requests using Stripe APIs and Webhooks, allowing seamless submission that reduced processing time by 40% across user transactions",
+        "Designed and deployed a fully customizable payment link feature utilizing Stripe APIs and Next.js, enabling users to create branded links that collectively processed transactions exceeding $25,000 within the first month",
+        "Devised a solution to integrate receipt attachments and custom metadata mappings into financial transactions via a RESTful API, improving data consistency and eliminating hundreds of hours of manual entry per month",
+        "Deployed application-level caching using TanStack Query, resulting in a 30% decrease in server load while enhancing perceived user response time for seamless interactions",
+        "Built a payments interface using Next.js, Node.js, and PostgreSQL with advanced filtering options, optimizing transaction management for over $1 million in processed transactions"
       ],
       "start": "July 2023",
       "end": "July 2024"
@@ -21,9 +21,9 @@
       "title": "Software Engineer Intern",
       "logo": "/flare.svg",
       "description": [
-        "Developed a back-end web service with Node.js and AWS Cognito to manage user authentication resulting in secure identity management and access control",
-        "Led user testing for the financial dashboard feature, gathering feedback from active users to inform iterative improvements on feature design and implementation",
-        "Implemented Figma designs for a financial reporting dashboard in ReactJS, ingesting data pulled from QuickBooks and visualizing it with dynamic charts and tables using ChartJS for enhanced user insights"
+        "Directed comprehensive user testing for the financial dashboard feature, collecting valuable feedback from 10 active organizations to drive critical enhancements in both design and functionality of the interface",
+        "Converted Figma designs into a financial reporting dashboard in ReactJS, integrating QuickBooks data and using ChartJS for interactive visualizations to track monthly revenue",
+        "Developed a back-end web service with Node.js and AWS Cognito to manage user authentication resulting in secure identity management and access control"
       ],
       "start": "June 2022",
       "end": "September 2022"

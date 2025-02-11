@@ -1,6 +1,31 @@
 {
   "project": [
     {
+      "title": "Email Newsletter",
+      "description": "A reliable and efficient email newsletter delivery service with a strong focus on security, scalability, and correctness. Developed using Rust, PostgreSQL, Redis, and Docker, and deployed on DigitalOcean, the system processes emails asynchronously through background workers pulling tasks from a PostgreSQL queue.",
+      "tags": ["Rust", "PostgreSQL", "Redis", "Docker"],
+      "links": [
+        {
+          "title": "Source",
+          "icon": "github",
+          "href": "https://github.com/yfarge/email-newsletter"
+        }
+      ]
+    },
+    {
+      "title": "Portfolio",
+      "thumbnail": "/portfolio.png",
+      "description": "This site you're on right now! It's a platform where I can showcase my skills, projects, and technical blog.",
+      "tags": ["Next.js", "TypeScript", "TailwindCSS"],
+      "links": [
+        {
+          "title": "Source",
+          "icon": "github",
+          "href": "https://github.com/yfarge/portfolio"
+        }
+      ]
+    },
+    {
       "title": "Promise Implementation",
       "description": "An implementation of the JavaScript Promise API that closely mimics native promise behavior",
       "tags": ["JavaScript", "Asynchronous", "Promise"],

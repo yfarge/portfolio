@@ -28,7 +28,7 @@ export const ProjectCard = ({
       <CardHeader>
         {thumbnail && (
           <Link href={thumbnail}>
-            <Image src={thumbnail} alt={title} />
+            <Image src={thumbnail} alt={title} width={300} height={175} />
           </Link>
         )}
       </CardHeader>
