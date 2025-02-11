@@ -11,7 +11,7 @@ export default async function BlogsPage() {
       <h1 className="font-serif text-5xl tracking-wide decoration-border/75 decoration-2">
         my blog.
       </h1>
-      <PostsWithSearch posts={posts} />
+      {posts && <PostsWithSearch posts={posts} />}
     </article>
   );
 }

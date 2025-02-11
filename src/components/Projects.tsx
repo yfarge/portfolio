@@ -7,7 +7,6 @@ export const Projects = () => {
     return (
         <section className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {projects.map((project) => {
-                console.log(project);
                 return <ProjectCard key={project.title} {...project} />;
             })}
         </section>

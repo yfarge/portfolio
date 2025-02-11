@@ -8,6 +8,8 @@ const blogDirectory = path.join(process.cwd(), 'content');
 
 export async function generateStaticParams() {
   const posts = await getPosts(blogDirectory);
+  if (!posts) return [];
+
   const slugs = posts.map((post) => ({ slug: post.slug }));
 
   return slugs;
