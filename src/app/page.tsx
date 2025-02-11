@@ -6,10 +6,11 @@ import summaryData from '@/data/summary.json';
 import { FileDown } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { calculateAge } from '@/lib/utils';
 
 export default function Home() {
   const summary = summarySchema.parse(summaryData);
-  const age = new Date().getFullYear() - new Date(summary.dob).getFullYear();
+  const age = calculateAge(new Date(summary.dob));
   return (
     <article className="flex flex-col gap-16">
       <section>
