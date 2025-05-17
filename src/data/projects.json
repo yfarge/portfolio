@@ -49,6 +49,18 @@
           "href": "https://github.com/yfarge/simple-state-machine"
         }
       ]
+    },
+    {
+      "title": "Minesweeper",
+      "description": "A CLI implementation of minesweeper using Node.js and Typescript. ",
+      "tags": ["TypeScript", "Node.js", "CLI"],
+      "links": [
+        {
+          "title": "Source",
+          "icon": "github",
+          "href": "https://github.com/yfarge/minesweeper"
+        }
+      ]
     }
   ]
 }
